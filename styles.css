@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.cell {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #292929;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.restart-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #03dac6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+}
+
+.restart-btn:hover {
+  background-color: #00bfa5;
+}
+/* ...existing styles from before... */
+
+.mode-select {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mode-select label {
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mode-select input {
+  margin-right: 5px;
+}
+
